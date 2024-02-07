@@ -214,7 +214,7 @@ set(CMAKE_OSX_SYSROOT ${CMAKE_IOS_SDK_ROOT}
 # note that currently both ARCHS_STANDARD_32_BIT and
 # ARCHS_UNIVERSAL_IPHONE_OS set armv7 only, so set both manually
 if (${IOS_PLATFORM} STREQUAL "OS")
-  set(IOS_ARCH $(ARCHS_STANDARD_32_64_BIT))
+  set(IOS_ARCH arm64)
 else (${IOS_PLATFORM} STREQUAL "OS")
   set(IOS_ARCH i386)
 endif (${IOS_PLATFORM} STREQUAL "OS")
